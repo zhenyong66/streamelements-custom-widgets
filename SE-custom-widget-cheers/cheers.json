@@ -1,0 +1,7 @@
+{
+    "cheerCommand": {
+        "type": "text",
+        "label": "command",
+        "value": "!cheer"
+    }
+}

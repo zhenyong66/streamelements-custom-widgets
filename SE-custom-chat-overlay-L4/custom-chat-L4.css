@@ -1,0 +1,85 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+}
+
+.main-container{
+    display:{{alignMessages}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+  /*background-color: greenyellow;*/
+}
+
+.message-row{
+    flex: 0 0 auto;
+    width:fit-content;
+    margin-bottom:5px;
+    background-color:{{backgroundColor}};
+    padding: 5px;
+    vertical-align: baseline;
+  max-width: 100%;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+  vertical-align: middle;
+}
+
+.user-box{
+    display:block;
+    font-size:{{fontSize}}px;
+  border: 10px solid pink;
+  border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALEAAAA1CAYAAAAOCAoLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAvUlEQVR4nO3SUQ3CAADFwAdBAI6whIVZQcmULNjgDx1N7iy0t8/1O7e9Bk3HXTjqTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeickzMXkmJs/E5JmYPBOTZ2LyTEyeicl7bHtve0pJ0vb9AzKGBcX48h7iAAAAAElFTkSuQmCC) 10 fill;
+  width: fit-content;
+  max-width: 100%;
+  position: relative;
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: -10px;
+  animation-name: animation;
+  animation-duration: 2s;
+  /*animation-timing-function: linear;*/
+}
+
+@keyframes animation {
+  0% {transform: rotate(0deg); transform-origin: bottom right;}
+  50% {transform: rotate(10deg); transform-origin: bottom right;}
+  100% {transform: rotate(0deg); transform-origin: bottom right;}
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display:block;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+  	border: 10px solid pink;
+    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAABMCAYAAADtAvetAAAACXBIWXMAAAsSAAALEgHS3X78AAABSElEQVR4nO3VQRGBAQAG0Y8RRIc/gCpOcokimnFlbIL3IuxlT8fxuG+7DgD49rxs+4zyJg0A/HidNQGA/4wSAIJRAkAwSgAIRgkAwSgBIBglAASjBIBglAAQjBIAglECQDBKAAhGCQDBKAEgGCUABKMEgGCUABCMEgCCUQJAMEoACEYJAMEoASAYJQAEowSAYJQAEIwSAIJRAkAwSgAIRgkAwSgBIBglAASjBIBglAAQjBIAglECQDBKAAhGCQDBKAEgGCUABKMEgGCUABCMEgCCUQJAMEoACEYJAMEoASAYJQAEowSAYJQAEIwSAIJRAkAwSgAIRgkAwSgBIBglAASjBIBglAAQjBIAglECQDBKAAhGCQDBKAEgGCUABKMEgGCUABCMEgCCUQJAMEoACEYJAMEoASAYJQAEowSAYJQAEIwSAP7Z9gaR2APlWZ2zLQAAAABJRU5ErkJggg==) 10 fill;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}

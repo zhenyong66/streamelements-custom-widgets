@@ -1,0 +1,71 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+}
+
+.main-container{
+    display:{{alignMessages}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+  /*background-color: greenyellow;*/
+}
+
+.message-row{
+    flex: 0 0 auto;
+    width:fit-content;
+    margin-bottom:5px;
+    background-color:{{backgroundColor}};
+    padding:5px;
+    vertical-align: baseline;
+  max-width: 100%;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+  vertical-align: middle;
+}
+
+.user-box{
+    display:block;
+    font-size:{{fontSize}}px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display:block;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+  	border: 10px solid pink;
+    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAABMCAYAAADtAvetAAAACXBIWXMAAAsSAAALEgHS3X78AAACG0lEQVR4nO3aoXLUUBiG4b8rW48H3Xo0XEBNIjqx4NG9ADwXkUEkBnx9/fquZj21YdLZbHdp+S6AfR6VE3f+OTPvnEnOpmmqQ13Tvqmq66p6W1WXBQD/t21Vbarqvh+Hu793ehTKrmlvqurGgQDgRM3R/NqPw8Oy/X0ou6b9UlUfnAwATtxjVd0usVzV801SJAGg6ny+VXZNezEvVruHa4MBgL05lp9rd6P8uHsBADx7v4TyylAA4IXzrmmv5lBemA0AvG5lLgDwb0IJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABEIJAIFQAkAglAAQCCUABHMoNwYEAK/6NYdybTYA8MK2H4ftqh+H+3lhPgBw5HsdfKP8ZjYAsLfpx+GullD247AWSwB4Mv+7c7sszqZp2o+la9p3VfWpqi7NCoAT81hVP6rqZz8Ov5etH4VysQvmHMsLpwSAEzDfIteHgXxSVX8Ar7hKKgvK2A0AAAAASUVORK5CYII=) 10 fill;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}

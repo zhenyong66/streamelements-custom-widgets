@@ -1,0 +1,87 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+}
+
+.main-container{
+    display:{{alignMessages}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+}
+
+.message-row{
+    flex: 0 0 auto;
+    width:auto;
+    margin-bottom:5px;
+    background-color:{{backgroundColor}};
+    padding:5px;
+    vertical-align: baseline;
+  max-width: 100%;
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+  vertical-align: middle;
+}
+
+.user-box{
+    display:block;
+    font-size:{{fontSize}}px;
+  width: auto;
+  max-width: 100%;
+  padding: 10px;
+  background-color: #FF66B8;
+  border-radius: 10px 10px 0 0;
+}
+
+.user-box > span{
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display:block;
+    font-size:{{fontSize}}px;
+    word-wrap: break-word;
+  background-color: pink;
+  width: auto;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}
+
+.modBoxColor {
+  background-color: green;
+}
+
+.modMsgColor {
+  background-color: greenyellow;
+  
+  .subBoxColor {
+    background-color: blue;
+  }
+  
+  .subMsgColor {
+    background-color: lightblue;
+  }
